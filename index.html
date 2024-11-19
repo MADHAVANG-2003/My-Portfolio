@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- AOS Link -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+
+    <!-- FontAwesome link -->
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GASP link -->
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <!-- Email.JS Link -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "bBLKmAxhHOnaSOee6",
+      });
+   })();
+</script>
+
+  
+
+
+    <title>Madhavan</title>
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="ball"></div>
+
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+      <div class="container">
+        <a class="navbar-brand fs-2 fw-bold" href="#">MADHAVAN</a>
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="nav-social d-flex">
+            <a href="https://www.linkedin.com/in/madhavan-g-ba678a335/"  target="_blank" class="nav-link fs-4"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/MADHAVANG-2003/repository-1.git" target="_blank" class="nav-link fs-4"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Page -->  
+
+      <section class="home" id="home">
+
+        <div class="logo-1 logo">
+          <i class="fa-brands fa-html5"></i>
+        </div>
+        <div class="logo-2 logo">
+          <i class="fa-brands fa-css3-alt"></i>
+        </div>
+        <div class="logo-3 logo">
+          <i class="fa-brands fa-bootstrap"></i>
+        </div>
+        <div class="logo-4 logo">
+          <i class="fa-brands fa-js-square"></i>
+        </div>
+
+        <div class="fab">
+          <a href="#home"><i class="fa-solid fa-arrow-up-long"></i></a>
+        </div>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-lg-2 g-3 mt-3" data-aos="fade-right">
+            <div class="col-lg-6"  data-aos-duration="2000">
+              <div class="home-text mt-lg-5 pt-lg-5" >
+                <h4>Looking For A Developer !</h4>
+                <h1 class="display-3 fw-bold">I'm Madhavan</h1>
+                <p>I'm a frontend developer dedicated to building intuitive and
+                  visually stunning web applications. Let's elevate your online
+                  presence!</p>
+                <a href="#contact" class="btn">Contact Me</a>
+                <a href="./assets/Resume/ATS RESUME MADHAVAN.pdf"
+                  download class="btn btn-2 ms-1">Download CV</a>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-down" data-aos-duration="2000">
+              <div class="home-img" >
+                <img src="./assets/images/madhavan.png" alt>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mouse">
+          <div class="mouse-dot"></div>
+          <div class="mouse-scroll"></div>
+        </div>
+      </section>
+
+      <!-- About Page -->
+
+      <section class="about section" id="about">
+        <div class="container">
+          <h1 class="text-center">About Me</h1>
+          <p class="text-center">Key abilities and strengths relevant to my career.</p>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="about-img" data-aos="fade-right">
+                <img src="./assets/images/madhavan.png" alt>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="about-text mt-4">
+                <p style="text-align: justify;">Aspiring frontend developer with
+                  a
+                  strong foundation in HTML, CSS, Bootstrap and
+                  JavaScript. Eager to leverage my skills in
+                  building responsive and engaging web
+                  applications. A quick learner with a
+                  passion for creating intuitive user
+                  experiences and a commitment to
+                  continuous improvement.</p>
+              </div>
+              <h5>My Skills</h5>
+              <div class="skill-container">
+                <div class="my-4">
+                  <div class="skill-head d-flex justify-content-between">
+                    <div class="fw-bold">HTML</div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar"
+                      style="width: 90%;" data-aos="fade-right" data-aos-duration="6000" data-aos-offset="0"></div>
+                  </div>
+                </div>
+                <div class="my-4">
+                  <div class="skill-head d-flex justify-content-between">
+                    <div class="fw-bold">CSS</div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar"
+                      style="width: 80%;" data-aos="fade-right" data-aos-duration="6000" data-aos-offset="0"></div>
+                  </div>
+                </div>
+                <div class="my-4">
+                  <div class="skill-head d-flex justify-content-between">
+                    <div class="fw-bold">Bootstrap</div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar"
+                      style="width: 80%;" data-aos="fade-right" data-aos-duration="6000" data-aos-offset="0"></div>
+                  </div>
+                </div>
+                <div class="my-4">
+                  <div class="skill-head d-flex justify-content-between">
+                    <div class="fw-bold">JavaScript</div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar"
+                      style="width: 60%;" data-aos="fade-right" data-aos-duration="6000" data-aos-offset="0"></div>
+                  </div>
+                </div>
+                <div class="my-4">
+                  <div class="skill-head d-flex justify-content-between">
+                    <div class="fw-bold">Figma</div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar"
+                      style="width: 30%;" data-aos="fade-right" data-aos-duration="6000" data-aos-offset="0"></div>
+                  </div>
+                </div>
+              </div>
+              <a href="./assets/Resume/ATS RESUME MADHAVAN.pdf"
+                download class="btn btn-2 mt-3">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resume Page -->
+
+      <section class="resume section" id="resume">
+        <div class="container">
+          <h1 class="text-center">Resume</h1>
+          <p class="text-center">Overview of my education and relevant experiences.</p>
+          <div class="main-timeline">
+
+            <!-- start experience section-->
+            <div class="timeline">
+              <div class="date-content">
+                <div class="date-outer">
+                  <span class="date">
+                    <span class="month">4 Months</span>
+                    <span class="year">2024</span>
+                  </span>
+                </div>
+              </div>
+              <div class="timeline-content" data-aos="flip-up">
+                <h5 class="title">Frontend Developer Course</h5>
+                <p class="description fw-bolder fs-4">
+                 School Of Techies
+                </p>
+                <p>                  
+                  At the School of Techies Institute, I gained hands-on experience in web development, focusing on HTML, CSS, Bootstrap, and JavaScript. I learned to create responsive and visually appealing web pages using Bootstrap's framework. My training included mastering the fundamentals of web design and interactivity through JavaScript. I worked on practical projects that enhanced my problem-solving skills. This experience has prepared me for real-world web development challenges.</p>
+              </div>
+            </div>
+            <!-- end experience section-->
+
+            <!-- start experience section-->
+            <div class="timeline">
+              <div class="date-content">
+                <div class="date-outer">
+                  <span class="date">
+                    <span class="month">3 Years</span>
+                    <span class="year">2021 - 2024</span>
+                  </span>
+                </div>
+              </div>
+              <div class="timeline-content" data-aos="flip-up">
+                <h5 class="title">Bachelor of Computer Science</h5>
+                <p class="description fw-bolder fs-4">
+                 Muthurangam Government Arts Collage
+                </p>
+                <p>
+                  I completed my Bachelor's degree in Computer Science at Muthurangam Government Arts College, graduating with a <strong>CGPA of 7.74</strong>. My coursework provided a strong foundation in programming, algorithms, and software development. This academic experience equipped me with critical thinking and problem-solving skills essential for a career in technology.</p>
+              </div>
+            </div>
+            <!-- end experience section-->
+
+            <!-- start experience section-->
+            <div class="timeline">
+              <div class="date-content">
+                <div class="date-outer">
+                  <span class="date">
+                    <span class="month">1 Years</span>
+                    <span class="year">2020 - 2021</span>
+                  </span>
+                </div>
+              </div>
+              <div class="timeline-content" data-aos="flip-up">
+                <h5 class="title">HSC</h5>
+                <p class="description fw-bolder fs-4">
+                  Government Higher Secondary School.
+                </p>
+                <p>I completed my Higher Secondary Certificate (HSC) at Government Higher Secondary School, achieving an impressive <strong>85.97%</strong> overall. This academic experience honed my analytical skills and deepened my understanding of core subjects. It laid a solid foundation for my further studies in computer science and technology.</p>
+              </div>
+            </div>
+            <!-- end experience section-->
+
+            <!-- start experience section-->
+            <div class="timeline">
+              <div class="date-content">
+                <div class="date-outer">
+                  <span class="date">
+                    <span class="month">1 Years</span>
+                    <span class="year">2018 - 2019</span>
+                  </span>
+                </div>
+              </div>
+              <div class="timeline-content" data-aos="flip-up">
+                <h5 class="title">SSLC</h5>
+                <p class="description fw-bolder fs-4">
+                  Government Higher Secondary School.
+                </p>
+                <p>
+                  I completed my Secondary School Leaving Certificate (SSLC) at Government Higher Secondary School, achieving a percentage of <strong>78.6%</strong>. This early academic experience provided me with a strong foundation in essential subjects and critical thinking skills. It set the stage for my further education and my passion for learning in the field of technology.</p>
+              </div>
+            </div>
+            <!-- end experience section-->
+
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Page -->
+
+      <section class="portfolio section" id="portfolio">
+        <h1 class="text-center">Portfolio</h1>
+        <p class="text-center">Showcasing my best work and creative projects.</p>
+        <div class="container">
+          <div class="portfolio-nav text-center my-5">            
+              <button class="btn btn-2 port-btn m-2" data-category="all">All</button>
+              <button class="btn btn-2 port-btn m-2" data-category="Html">HTML & CSS</button>
+              <button class="btn btn-2 port-btn m-2" data-category="Boot">Bootstrap</button>
+              <button class="btn btn-2 port-btn m-2" data-category="js">JavaScript</button>
+          </div>
+          <div class="portfolio-grid">
+            <div class="portfolio-box Html" data-item="hc" data-aos="flip-left">
+              <img src="./assets/images/project 1.webp" alt="">
+              <div class="porfolio-details">
+                <div class="portfolio-link">
+                  <a href="https://madhavan-12pm-batch-project-1-2.netlify.app/" target="_blank" class="btn"><i class="fa-solid fa-eye"></i></a>                
+                </div>
+                <p class="portfolio-discription">I Developed a responsive Interior Design Studio Website using HTML and CSS. Features a modern layout that highlights interior design services and portfolio, ensuring engaging</p>
+              </div>
+            </div>
+            <div class="portfolio-box Html" data-item="hc" data-aos="flip-right">
+              <img src="./assets/images/project 2.webp" alt="">
+              <div class="porfolio-details">
+                <div class="portfolio-link">
+                  <a href="https://madhavan-12pm-batch-project-2.netlify.app/" target="_blank" class="btn"><i class="fa-solid fa-eye"></i></a>                
+                </div>
+                <p class="portfolio-discription">I Developed a multipage Grocery Store Website using HTML and CSS. Features an intuitive layout and easy navigation to enhance the online shopping experience.</p>
+              </div>
+            </div>
+            <div class="portfolio-box Boot" data-item="boot" data-aos="flip-left" data-aos-offset="-300">
+              <img src="./assets/images/project 3.webp" alt="">
+              <div class="porfolio-details">
+                <div class="portfolio-link">
+                  <a href="https://madhavan0-12pm-batch-project-3.netlify.app/" target="_blank" class="btn"><i class="fa-solid fa-eye"></i></a>                
+                </div>
+                <p class="portfolio-discription">I Developed a Digital Agency Webpage using HTML, CSS, and Bootstrap. Responsive design features an elegant layout showcasing services, portfolio, and client testimonials.</p>
+              </div>
+            </div>
+            <div class="portfolio-box Boot" data-item="boot" data-aos="flip-right" data-aos-offset="-300">
+              <img src="./assets/images/project 4.webp" alt="">
+              <div class="porfolio-details">
+                <div class="portfolio-link">
+                  <a href="https://madhavan-12pm-batch-project-4.netlify.app/" target="_blank" class="btn"><i class="fa-solid fa-eye"></i></a>                
+                </div>
+                <p class="portfolio-discription">I Developed a Gym Website using HTML, CSS, and Bootstrap. Designed for a modern, responsive layout to effectively showcase fitness services.</p>
+              </div>
+            </div>
+          </div>          
+        </div>
+        <div class="text-center mt-4"><a href="#" class="btn btn-2 text-center">More Projects <i class="fa-solid fa-arrow-right"></i></a></div>
+        
+      </section>
+
+      <!-- Contact Page -->
+
+      <section class="contact section" id="contact">
+        <h1 class="text-center mb-5">Contact Me</h1>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-lg-3 gy-5">
+            <div class="col">
+              <div class="contact-box d-flex flex-column justify-content-center align-items-center">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-phone fs-1 text-center w-100 mb-3"></i>
+                  <h3>Call Me</h3>
+                </div>
+                <div class="contact-link">
+                  <a href="tel:+916381692962" class="fs-5">+91 6381692962</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="contact-box d-flex flex-column justify-content-center align-items-center">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-envelope fs-1 text-center w-100 mb-3"></i>
+                  <h3>Mail to Me</h3>
+                </div>
+                <div class="contact-link">
+                  <a href="mailto:madhavangopi2003@gmail.com" class="fs-5">madhavangopi2003@gmail.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="contact-box d-flex flex-column justify-content-center align-items-center">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-location-dot fs-1 text-center w-100 mb-3"></i>
+                  <h3>Location</h3>
+                </div>
+                <div class="contact-link">
+                  <a href="https://maps.app.goo.gl/R7W1wipiV37puh4E7" class="fs-5">View on Google map</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <!-- Contact form -->
+          <h1 class="text-center my-4">Send Your Message Here</h1>
+          <div class="row">
+            <div class="col-12" data-aos="fade-right">
+              <div class="contact-form">
+                <div>
+                  <div class="form-group">
+                      <input type="text" class="form-control mb-3 shadow-none" id="firstName" placeholder="First Name" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control mb-3 shadow-none" id="lastName" placeholder="Last Name" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="email" class="form-control mb-3 shadow-none" id="email" placeholder="Email" required>
+                  </div>
+                  <div class="form-group">
+                      <textarea class="form-control mb-3 shadow-none" id="message" rows="4" placeholder="Message" required></textarea>
+                  </div>
+                  <button type="submit" class="btn mt-2" id="btn">Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Page -->
+
+      <section class="footer p-5">
+        <h1 class="text-center text-light mb-5">Madhavan</h1>
+
+        <div class="footer-links">
+          <a href="#" class="foot-link"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="foot-link"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <ul class="d-flex flex-wrap list-unstyled  justify-content-center mt-3 foot-nav">
+          <li class="nav-item">
+            <a class="" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="" aria-current="page" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="" aria-current="page" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="" aria-current="page" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="" aria-current="page" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </section>
+
+
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+       
+
+      <!-- Custom Script -->
+
+      <script src="./assets/Javascript/script.js"></script>
+
+      
+       <!-- AOS Script -->
+
+       <script>
+        AOS.init();
+      </script>
+    </body>
+  </html>

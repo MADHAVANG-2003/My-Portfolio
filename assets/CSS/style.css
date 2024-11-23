@@ -271,12 +271,22 @@ h1,h5{
   }
 }
 /* ---About Style--- */
-.progress {
-  height: 7px;
+.skill-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-row: 200px 200px;
+  gap: 20px;
 }
-.progress-bar{
-  border-radius: 1rem;
-  background-color: var(--primary-color) !important;
+.skill-logo{
+  background-color: #afafaf;
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  place-content: center;
+}
+.skill-logo img{
+  width: 50px;
+
 }
 
 /* ---Resume Style--- */
@@ -568,9 +578,7 @@ h1,h5{
 .hidden { display: none; }
 
 /* ---Contact Style--- */
-.contact-img{
 
-}
 .contact-link a{
   color: var(--primary-color);
 }

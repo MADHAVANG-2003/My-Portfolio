@@ -28,6 +28,11 @@
 body{
   overflow-x: hidden;
 }
+body.dark{
+  background-color: #232323;
+  --secondary-color:#fff;
+  --light-color:#1f1f1f;
+}
 .cursor{
   position: fixed;
   top: 0;
@@ -97,7 +102,12 @@ img{
 h1,h5{
   color: var(--primary-color) !important;
 }
-
+h4{
+  color: var(--secondary-color);
+}
+p{
+  color: var(--secondary-color);
+}
 .btn{
   background-color: var(--primary-color) !important;
   color: var(--light-color) !important;
@@ -125,17 +135,22 @@ h1,h5{
   position: fixed;
   bottom: 40px;
   right: 40px;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: var(--light-color) !important;
-  padding: 40px;
+  padding: 30px;
   font-size: 30px;
   color: var(--primary-color);
   display: grid;
   place-content: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(229,75,75,1);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(229,75,75,1);
+  box-shadow: 0px 1px 5px 0px rgba(229,75,75,1);
   z-index: 999;
+}
+.theme{
+  position: relative;
 }
 @media screen and (max-width:500px){
   .fab a{
@@ -287,6 +302,18 @@ h1,h5{
 .skill-logo img{
   width: 50px;
 
+}
+.tag {
+  display: inline-block;
+  background-color: var(--light-color);
+  color:var(--secondary-color);
+  border: 1px solid #8d8d8d;
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin: 5px;
+  transition: all 0.3s ease;
+  cursor:pointer;
 }
 
 /* ---Resume Style--- */
@@ -568,7 +595,7 @@ h1,h5{
   position: absolute;
   bottom: 10px;
   padding: 15px;
-  color: var(--light-color);
+  color: #fff;
   transform: translate(0,300px);
   transition: 0.6s;
 }
@@ -578,7 +605,12 @@ h1,h5{
 .hidden { display: none; }
 
 /* ---Contact Style--- */
-
+.contact-icon i{
+  color: var(--secondary-color);
+}
+.contact-icon h3{
+  color: var(--secondary-color);
+}
 .contact-link a{
   color: var(--primary-color);
 }
@@ -589,7 +621,7 @@ h1,h5{
 .contact-form textarea{
   resize: none;
   border-radius: 0.3rem;
-  height: 300px;
+  height: 200px;
 }
 .contact-form input:focus,.contact-form textarea:focus{
    border: 1px solid var(--primary-color) !important;

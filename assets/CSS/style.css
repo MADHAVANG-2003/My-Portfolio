@@ -60,42 +60,6 @@ body.dark{
   position: relative;
   overflow-x: hidden;
 }
-.mouse{
-  height: 35px;
-  width: 25px;
-  border: 3px solid var(--primary-color);
-  position: absolute;
-  bottom: 50px;
-  left: 40%;
-  transform: translateX(-50%) translateY(-50%);
-  border-radius: 10rem;
-}
-.mouse-scroll{
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  height: 10%;
-  background-color: var(--primary-color) !important;
-}
-.mouse-dot{
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
-  background-color: var(--primary-color);
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  animation: scroll 0.5s infinite;
-}
-@keyframes scroll {
-  from{
-    transform: translate(-50%,-10%);
-  }
-  to{
-    transform: translate(-50%,-50%);
-  }
-}
 img{
   width: 100%;
 }
@@ -289,30 +253,27 @@ p{
   grid-row: 200px 200px;
   gap: 20px;
 }
-.skill-logo{
-  background-color: #afafaf;
-  padding: 20px;
-  border-radius: 10px;
-  display: grid;
-  place-content: center;
+.skill-box{
+  cursor: pointer;
 }
-.skill-logo img{
-  width: 50px;
-
+.skill-box svg{
+  transition: 0.3s;
+  transform: translateY(10px);
 }
-.tag {
-  display: inline-block;
-  background-color: var(--light-color);
-  color:var(--secondary-color);
-  border: 1px solid #8d8d8d;
-  font-size: 1.2rem;
-  padding: 8px 12px;
-  border-radius: 6px;
-  margin: 5px;
-  transition: all 0.3s ease;
-  cursor:pointer;
+.skill-box h4{
+  font-size: 18px;
+  font-weight: 700;
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: 0.3s;
 }
-
+.skill-box:hover.skill-box h4{
+  transform: translateY(0);
+  opacity: 1;
+}
+.skill-box:hover.skill-box svg{
+  transform: translateY(0);
+}
 /* ---Resume Style--- */
 
 .main-timeline {

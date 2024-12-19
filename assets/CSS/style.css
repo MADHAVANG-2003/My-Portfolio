@@ -247,6 +247,9 @@ p{
   }
 }
 /* ---About Style--- */
+.about{
+  overflow-y: hidden;
+}
 .skill-container{
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -303,6 +306,9 @@ p{
   content: "";
   display: block;
   clear: both
+}
+.timeline-content p{
+  text-align: justify;
 }
 .timeline-content p strong{
   color: var(--primary-color);
